@@ -1,10 +1,6 @@
 FROM php:7.1-apache
 
 
-MAINTAINER Leonel De Leon <gldeleon@live.com.mx>
-
-
-
 #········instalar y configurar librerias basicas
 
 RUN apt-get update
