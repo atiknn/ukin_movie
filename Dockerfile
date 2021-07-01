@@ -1,4 +1,4 @@
-FROM php:7.3-apache
+FROM php:7.1-apache
 
 
 MAINTAINER Leonel De Leon <gldeleon@live.com.mx>
@@ -28,7 +28,8 @@ zip \
 
 RUN docker-php-ext-install iconv  mbstring
 
-RUN docker-php-ext-install pdo pdo_mysql pdo_pgsql
+
+RUN docker-php-ext-install pdo pdo_pgsql
 
 RUN docker-php-ext-install bcmath
 
